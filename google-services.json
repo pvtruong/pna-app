@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "657575446527",
+    "firebase_url": "https://pna-project.firebaseio.com",
+    "project_id": "pna-project",
+    "storage_bucket": "pna-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657575446527:android:b3e1b9602a3b7d02de89ca",
+        "android_client_info": {
+          "package_name": "vn.com.pna.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657575446527-pbdh9k9ua538a7go7qsmme6njt6hkn06.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK7X3SK3cGk6trb9TsnKkWandNtTspnJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657575446527-pbdh9k9ua538a7go7qsmme6njt6hkn06.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

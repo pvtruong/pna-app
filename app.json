@@ -1,0 +1,85 @@
+{
+  "expo": {
+    "name": "PNA SYSTEM",
+    "description": "PNA SYSTEM",
+    "slug": "PNA",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.2.7",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "notification": {
+      "icon": "./assets/notification.png",
+      "color": "#FFFFFF",
+      "androidMode": "collapse",
+      "androidCollapsedTitle": "PNA"
+    },
+    "updates": {
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 3000
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "facebookScheme": "fb411997912823612",
+    "facebookAppId": "411997912823612",
+    "facebookDisplayName": "PNA",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "vn.com.pna.system",
+      "requireFullScreen": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Chương trình này sử dụng máy ảnh để cho phép người dùng thêm hình đại diện, hình bằng cấp, chứng chỉ và các giấy tờ khác.",
+        "NSPhotoLibraryAddUsageDescription": "Chương trình sử dụng thư viện ảnh để cho phép người dùng thêm hình đại diện, hình bằng cấp, chứng chỉ và các giấy tờ khác.",
+        "NSPhotoLibraryUsageDescription": "Chương trình sử dụng thư viện ảnh để cho phép người dùng thêm hình đại diện, hình bằng cấp, chứng chỉ và các giấy tờ khác.",
+        "NSLocationWhenInUseUsageDescription": "Chương trình này sử dụng vị trí của bạn để gợi ý cho bạn các công việc gần bạn."
+      },
+      "config": {
+        "googleMapsApiKey": ""
+      }
+    },
+    "android": {
+      "package": "vn.com.pna.app",
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi": true,
+      "versionCode": 18,
+      "icon": "./assets/icon-a.png",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "MANAGE_DOCUMENTS",
+        "VIBRATE",
+        "WAKE_LOCK",
+        "READ_CALENDAR",
+        "WRITE_CALENDAR",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "com.anddoes.launcher.permission.UPDATE_COUNT",
+        "com.android.launcher.permission.INSTALL_SHORTCUT",
+        "com.google.android.c2dm.permission.RECEIVE",
+        "com.google.android.gms.permission.ACTIVITY_RECOGNITION",
+        "com.google.android.providers.gsf.permission.READ_GSERVICES",
+        "com.majeur.launcher.permission.UPDATE_BADGE",
+        "com.sec.android.provider.badge.permission.READ",
+        "com.sec.android.provider.badge.permission.WRITE",
+        "com.sonyericsson.home.permission.BROADCAST_BADGE"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDyZJjktT4zKxbKdf4f6xPgcaHjjb3w8AI"
+        }
+      }
+    }
+  }
+}

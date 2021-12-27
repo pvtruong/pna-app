@@ -1,5 +1,6 @@
 import React from 'react';
-import { Alert,View,AsyncStorage,Image} from 'react-native';
+import { Alert,View,Image} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Container,Header,Footer,Content,Left,Right,Body,Text,Title,Icon,Button,Form,Item,Label,Input } from 'native-base';
 import {asyncLoginAPI,asyncGet} from "./../API.js";
 import {facebook_app_id,server_url,id_app,group_id} from "./../Config";

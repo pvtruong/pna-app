@@ -1,6 +1,7 @@
 import React from 'react';
 import {server_url,id_app,group_id,baseUrl} from './../Config.js';
-import {Alert,View,ActivityIndicator,AsyncStorage,Image,StyleSheet,ScrollView} from 'react-native';
+import {Alert,View,ActivityIndicator,Image,StyleSheet,ScrollView} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {textCenter,loading,screenCenter,headerPageStyle,linearBackgroundColor,pageBackground,mainColor,mainTextColor} from "./../style.js";
 import {asyncSignup,asyncGet,getLabel} from "./../API.js";
 import { Container,Left,Right,Body,Text,Title,Icon,Button,Thumbnail,Segment,Form,Label,Input,Item,Toast,H3 } from 'native-base';

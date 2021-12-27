@@ -1,5 +1,6 @@
 import React from 'react';
-import { Alert,View,AsyncStorage,Image,StyleSheet,ScrollView,ActivityIndicator} from 'react-native';
+import { Alert,View,Image,StyleSheet,ScrollView,ActivityIndicator} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Container,Left,Right,Body,Text,Title,Icon,Button,Form,Item,Label,Input,H1,H2,H3 } from 'native-base';
 import {Spinner} from 'native-base';
 import {asyncLoginAPI,asyncGet,getLabel,getLanguage,asyncSetLang,cachedData} from "./../API.js";
@@ -93,8 +94,6 @@ class LoginlocalWidget extends React.Component {
               <KeyboardAvoidingContent style={{flex:1,flexDirection:'column',justifyContent:"center",alignItems:"center"}}>
                   <Form style={{padding:20,width:'100%',maxWidth:480}}>
                       <View style={{marginTop:10}}>
-
-
                         <View style={{marginTop:5,padding:5,flexDirection:"column"}}>
                           <Label>{getLabel("Tên người dùng")} <Text style={{color:"red"}}>(*)</Text></Label>
                           <Input style={{backgroundColor:"white",padding:5,marginTop:5,borderColor:'silver',borderRadius:5,borderWidth:1}}  autoCapitalize={'none'}  clearButtonMode ={'while-editing'} autoCorrect ={false} value={this.state.user}  onChangeText={(user)=>this.setState({user})}/>

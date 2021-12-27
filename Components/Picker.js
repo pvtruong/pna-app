@@ -125,7 +125,7 @@ class myPicker extends React.Component{
       <View>
         <TouchableOpacity onPress={this.pick} style={[{height:30,flexDirection:'row',justifyContent:'space-between',alignItems:'center'},this.props.style]}>
           <Text style={[{color:mainButtonColor},this.props.itemStyle]}>{this.selectedLabel()}</Text>
-          <Icon name="ios-arrow-dropdown" style={{marginLeft:10}} />
+          <Icon name="caret-down-outline" style={{marginLeft:10}} />
         </TouchableOpacity>
         <Modal
             animationType="fade"

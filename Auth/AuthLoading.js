@@ -1,10 +1,9 @@
 import React from 'react';
-import {ActivityIndicator,AsyncStorage,StatusBar,View,ImageBackground} from 'react-native';
-import {textCenter,screenCenter,pageBackground} from "./../style.js";
+import {StatusBar,View} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import {screenCenter} from "./../style.js";
 import {asyncGetUserInfoByToken,cachedData} from "./../API.js";
-import {public_token,SLUG_APP_FOR_CUSTOMER} from "./../Config.js";
 import Context  from '../Context';
-import Constants from 'expo-constants';
 import {Spinner} from 'native-base';
 class AuthLoading extends React.Component {
   constructor() {

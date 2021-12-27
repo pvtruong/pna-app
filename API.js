@@ -1,5 +1,6 @@
 import React from 'react';
-import {AsyncStorage,Image,Platform} from 'react-native';
+import {Image,Platform} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {DeviceEventEmitter,Alert} from 'react-native';
 import {Toast,H3} from 'native-base';
 import { Buffer } from 'buffer';

@@ -1,6 +1,7 @@
 import React from 'react';
 import {server_url,baseUrl,id_app} from './../Config.js';
-import {Alert,View,AsyncStorage} from 'react-native';
+import {Alert,View} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {headerPageStyle,pageBackground,loading,mainColor} from './../style.js';
 import {getLabel,asyncGet,asyncUpdateVoucher} from "./../API.js";
 import {Text,Form,Icon,Button,Label,Input,Item,Toast,Spinner } from 'native-base';

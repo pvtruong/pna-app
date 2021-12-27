@@ -1,6 +1,7 @@
 import React from 'react';
 import {server_url,baseUrl} from './../Config.js';
-import {Alert,View,AsyncStorage,TouchableOpacity,Image,StyleSheet,ScrollView} from 'react-native';
+import {Alert,View,TouchableOpacity,Image,StyleSheet,ScrollView} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {textCenter,sidebarHeaderStyle,headerPageStyle,pageBackground,mainColor} from "./../style.js";
 import {asyncloginAPI,getNumberUnReadNotifications,asyncGetRequireLoginInfoByToken,getLabel,cachedData} from "./../API.js";
 import { Container,Left,Right,Body,Text,Title,Icon,Button,Thumbnail,Form,Label,Input,Item,Toast,List,ListItem ,Badge,H3} from 'native-base';

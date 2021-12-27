@@ -1,6 +1,7 @@
 import React from 'react';
 import {server_url,baseUrl} from './../Config.js';
-import {Alert,View,AsyncStorage,TouchableOpacity,Image,StyleSheet,ScrollView} from 'react-native';
+import {Alert,View,TouchableOpacity,Image,StyleSheet,ScrollView} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {DeviceEventEmitter} from 'react-native';
 
 import {textCenter,sidebarHeaderStyle,headerPageStyle,pageBackground,mainColor,mainTextColor} from "./../style.js";

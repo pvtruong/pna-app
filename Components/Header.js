@@ -14,7 +14,7 @@ import PropTypes from 'prop-types';
 const HEIGHT = 55;
 const STATUS_BAR_HEIGHT = Constants.statusBarHeight + 0;
 
-import Animated, { Easing } from 'react-native-reanimated';
+
 
 
 class Header extends React.Component {
@@ -24,34 +24,13 @@ class Header extends React.Component {
       this.props.onLeftPress = ()=>{}
     }
     this.gotoSearchPage = this.gotoSearchPage.bind(this);
-    this.heightValue = new Animated.Value(0);
+    
     this.state={
       text4Search:this.props.text4Search,
     }
   }
-  show(){
-    Animated.timing(this.heightValue, {
-       toValue: 0,
-       duration: 200,
-       easing: Easing.inOut(Easing.ease),
-    }).start();
-
-  }
-  hide(){
-    Animated.timing(this.heightValue, {
-       toValue: -HEIGHT,
-       duration: 200,
-       easing: Easing.inOut(Easing.ease),
-    }).start();
-  }
   componentDidUpdate(oldPros){
-    if(oldPros.hide!=this.props.hide){
-      if(this.props.hide){
-        this.hide()
-      }else{
-        this.show()
-      }
-    }
+    
   }
   /*shouldComponentUpdate(nextProps, nextState){
 
@@ -177,9 +156,9 @@ class Header extends React.Component {
   }
   render() {
     return (
-      <Animated.View style={{overflow:"hidden",marginTop: this.heightValue}}>
+      <View style={{overflow:"hidden",marginTop: this.heightValue}}>
         {this.renderHeader()}
-      </Animated.View>
+      </View>
     )
   }
 }

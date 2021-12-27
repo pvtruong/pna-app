@@ -64,6 +64,7 @@ class myPicker extends React.Component{
                   <DateTimePicker
                     style={{ width: '100%'}}
                     value={date}
+                    display={"spinner"}
                     mode={this.props.mode||"date"}
                     is24Hour={true}
                     onChange={(event, selectedDate)=>this.onChange(selectedDate)}/>

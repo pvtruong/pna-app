@@ -1,6 +1,7 @@
 import React from 'react';
 import {server_url,baseUrl,id_app,mainColor} from './../Config.js';
-import {Alert,Image,StyleSheet,View,ScrollView,Modal,ActivityIndicator,AsyncStorage} from 'react-native';
+import {Alert,Image,StyleSheet,View,ScrollView,Modal,ActivityIndicator} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {headerPageStyle,pageBackground,loading} from './../style.js';
 import {getLabel,asyncGet,asyncGetGridInfo,asyncGetReportInfo,asyncGetVoucher,asyncGetVoucherInfo,asyncUpdateVoucher,asyncPostVoucher} from "./../API.js";
 import {Left,Right,Body,Text,Form,Icon,Button,Thumbnail,Label,Input,Item,Toast,Spinner,H3 } from 'native-base';

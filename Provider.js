@@ -1,7 +1,8 @@
 import React from 'react'
 import DefaultContext  from "./Context";
 import {server_url,funcs,id_app,public_token,group_id_partner,SLUG_APP_FOR_CUSTOMER,app_name} from './Config.js';
-import {DeviceEventEmitter,Alert,Platform,AsyncStorage,View} from 'react-native';
+import {DeviceEventEmitter,Alert,Platform,View} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {Spinner } from 'native-base';
 import io from 'socket.io-client'
 import equal from 'fast-deep-equal';

@@ -19,7 +19,7 @@ import {server_url,funcs,id_app,appInfo,public_token} from './Config.js';
 import getTheme from './native-base-theme/components';
 import commonColor from './native-base-theme/variables/commonColor';
 import {asyncGet,cacheImages,cacheDatas,getLabelsList,asyncLoadLang} from "./API.js";
-import {Image,Animated,Easing,ImageBackground,View,ActivityIndicator,AsyncStorage} from 'react-native';
+import {Animated,Easing,Text} from 'react-native';
 import { AppearanceProvider } from 'react-native-appearance';
 import { StatusBar } from 'expo-status-bar';
 import { createSwitchNavigator,createAppContainer } from 'react-navigation';
@@ -29,6 +29,7 @@ import About from  './About.js';
 import Login from './Auth/Login.js';
 import Loginlocal from './Auth/Loginlocal.js';
 import AuthLoading from './Auth/AuthLoading.js';
+import { LogBox } from 'react-native';
 //import LoginSms from './Auth/LoginSms.js';
 
 import User from './User/UserInfo.js';
@@ -53,12 +54,13 @@ import Thnxt from './reports/Thnxt.js';
 import Sctvt from './reports/Sctvt.js';
 import Soquy from './reports/Soquy.js';
 import Sotiengui from './reports/Sotiengui.js';
-import {  AppLoading ,ScreenOrientation,SplashScreen} from "expo";
+import AppLoading from 'expo-app-loading';
+
 import { Asset } from 'expo-asset';
 
 import * as Font from "expo-font";
 import * as Animatable from 'react-native-animatable';
-console.disableYellowBox = true;
+LogBox.ignoreAllLogs();
 const  AppStack = createStackNavigator({
   Home:{screen:Home},
   About:{screen:About},

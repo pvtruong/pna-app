@@ -1,7 +1,8 @@
 import React from 'react';
 import {server_url,funcs,id_app,group_id_partner,SLUG_APP_FOR_CUSTOMER} from './Config.js';
 import {inputStyle,headerPageStyle,textCenter,cardHeader,pageBackground,linearBackgroundColor,mainColor,mainTextColor,headerColor,cardSylte,mainButtonColor} from './style.js';
-import {TouchableOpacity,View,ScrollView,Alert,FlatList,Platform,Linking,AsyncStorage} from 'react-native';
+import {TouchableOpacity,View,ScrollView,Alert,FlatList,Platform,Linking} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import {asyncProducts,registerForPushNotificationsAsync,asyncGetOrderDetail,asyncGetPromotionDetail,asyncGet,asyncGetDataById,asyncGetDataByIdShared,getLabel,asyncSetLang,getLanguage,cachedData} from "./API.js";
 import Header from "./Components/Header.js";

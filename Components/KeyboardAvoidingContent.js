@@ -1,10 +1,6 @@
 import React from 'react';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import {View,Platform} from 'react-native';
-import {
-  Text
-} from 'native-base';
-
 class KeyboardAvoidingContent extends React.Component {
   constructor(props){
     super(props);
@@ -19,7 +15,6 @@ class KeyboardAvoidingContent extends React.Component {
     if(this.props.style){
       this.style = Object.assign(this.style,this.props.style);
     }
-
   }
   render() {
     return (
